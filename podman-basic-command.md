@@ -40,3 +40,9 @@ To list all running containers:
 podman ps
 ```
 
+To list all containers, including stopped ones:
+
+```bash
+podman ps -a
+```
+
