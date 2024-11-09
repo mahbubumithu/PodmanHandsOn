@@ -19,3 +19,24 @@ podman images
 ```
 
 This will display all locally available container images, showing their REPOSITORY, TAG, IMAGE ID, and SIZE.
+
+1.3 Running Containers with Podman
+
+The podman run command allows you to start a new container from an image. Here are some options you might use:
+
+```bash
+podman run -d -p 8080:80 --name my-web-server nginx
+```
+
+Explanation:
+
+    -d: Runs the container in detached mode (in the background).
+    -p 8080:80: Maps port 80 in the container to port 8080 on the host.
+    --name my-web-server: Assigns the container a custom name.
+
+To list all running containers:
+
+```bash
+podman ps
+```
+
